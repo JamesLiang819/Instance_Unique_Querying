@@ -1,0 +1,18 @@
+_BASE_: "Base-CondInst.yaml"
+MODEL:
+  META_ARCHITECTURE: "CondInst1"
+  WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"
+  RESNETS:
+    DEPTH: 50
+INPUT:
+  CROP:
+    ENABLED: True
+  MIN_SIZE_TRAIN: [400,1200]
+  MIN_SIZE_TRAIN_SAMPLING: "range"
+TEST:
+  AUG:
+    ENABLED: True
+SOLVER:
+  AMP:
+    ENABLED: True
+OUTPUT_DIR: "output/condinst_MS_R_50_1x"

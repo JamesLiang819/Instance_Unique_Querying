@@ -1,0 +1,28 @@
+_BASE_: "Base-CondInst.yaml"
+MODEL:
+  META_ARCHITECTURE: "CondInst_contrast_memorybank3"
+  WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"
+  RESNETS:
+    DEPTH: 50
+  CONDINST:
+    MAX_PROPOSALS: 500
+    # MASK_BRANCH:
+    #   OUT_CHANNELS: 128
+    #   CHANNELS: 128
+INPUT:
+  CROP:
+    ENABLED: True
+  MIN_SIZE_TRAIN: [400,1200]
+  MIN_SIZE_TRAIN_SAMPLING: "range"
+  # MAX_SIZE_TEST: 2400
+  # MAX_SIZE_TEST_SAMPLING: "range"
+  # MIN_SIZE_TEST: 1600
+  # MIN_SIZE_TEST_SAMPLING: "range"
+# TEST:
+#   AUG:
+#     ENABLED: True
+SOLVER:
+  IMS_PER_BATCH: 12
+  AMP:
+    ENABLED: True
+OUTPUT_DIR: "output/condinst_MS_R_50_1x"

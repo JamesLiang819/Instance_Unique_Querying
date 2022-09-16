@@ -1,0 +1,19 @@
+_BASE_: "Base-SOLOv2.yaml"
+MODEL:
+  META_ARCHITECTURE: "SOLOv2"
+  BASIS_MODULE:
+    NUM_CLASSES: 1203
+  ROI_HEADS:
+    NUM_CLASSES: 80
+  SOLOV2:
+    NUM_CLASSES: 80
+MODEL:
+  WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"
+  RESNETS:
+    DEPTH: 50
+SOLVER:
+  STEPS: (210000, 250000)
+  MAX_ITER: 270000
+DATASETS:
+  TRAIN: ("lvis_v1_train",)
+  TEST: ("lvis_v1_val",)
