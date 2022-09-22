@@ -9,10 +9,8 @@
   <img src="./resources/Architecture.png">
 </div>
 <p align="center">
-  Overview of our new training framework for query-based instance segmentation. Rather than current intra-scene training paradigm, our framework addresses inter-scene instance discrimination and transformation equivariance for discriminative instance query embedding learning.
+  Overview of our new training framework for query-based instance segmentation.
 </p>
-
-Learning Equivariant Segmentation with Instance-Unique Querying<br>
 
 This is official repo for Learning Equivariant Segmentation with Instance-Unique Querying. Our full implenmentation will be availble at [mmdetection](https://github.com/open-mmlab/mmdetection) for easy-to-use, stay tuned!
 
