@@ -1,8 +1,6 @@
-# Instance Unique Querying
+# Learning Equivariant Segmentation with Instance-Unique Querying
 
 ![Python 3.7](https://img.shields.io/badge/python-3.7-green.svg)
-
-# Learning Equivariant Segmentation with Instance-Unique Querying
 
 <!-- ![image](resources/image.png) -->
 <div align="center">
