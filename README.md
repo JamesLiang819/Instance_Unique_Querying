@@ -72,7 +72,7 @@ Note that:
 - We set `OMP_NUM_THREADS=1` by default, which achieves the best speed on our machines, please change it as needed.
 
 ## Citation
-```
+```bibtex
 @article{wang2022learning,
   title={Learning Equivariant Segmentation with Instance-Unique Querying},
   author={Wang, Wenguan and Liang, James and Liu, Dongfang},
