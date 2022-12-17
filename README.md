@@ -1,5 +1,5 @@
 # Instance Unique Querying
-<!-- [![NVIDIA Source Code License](https://img.shields.io/badge/license-NSCL-blue.svg)](https://github.com/NVlabs/SegFormer/blob/master/LICENSE) -->
+
 ![Python 3.7](https://img.shields.io/badge/python-3.7-green.svg)
 
 # Learning Equivariant Segmentation with Instance-Unique Querying
@@ -73,10 +73,10 @@ Note that:
 
 ## Citation
 ```
-@inproceedings{wang2022learning,
+@article{wang2022learning,
   title={Learning Equivariant Segmentation with Instance-Unique Querying},
   author={Wang, Wenguan and Liang, James and Liu, Dongfang},
-  booktitle={NeurIPS},
+  booktitle={Advances in Neural Information Processing Systems},
   year={2022}
 }
 ```
